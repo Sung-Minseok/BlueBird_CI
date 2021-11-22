@@ -11,7 +11,7 @@ function App() {
   const [error, setError] = useState(null);
 
   const fetchUser = async () => {
-    console.log("web hook triger test");
+    //console.log("web hook triger test");
     console.log("유저토큰 재발급");
     try {
       setLoading(true);
