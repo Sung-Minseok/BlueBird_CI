@@ -3,14 +3,15 @@ import AppRouter from "./components/Router";
 import axios from "axios";
 import { getCookie } from "../src/cookies";
 
-// const fakeUser = { id: 0, name: "hs" };
 
+// const fakeUser = { id: 0, name: "hs" };
 function App() {
   const [userObj, setUserObj] = useState();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   const fetchUser = async () => {
+    console.log("web hook triger test");
     console.log("유저토큰 재발급");
     try {
       setLoading(true);
